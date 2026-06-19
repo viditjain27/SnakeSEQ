@@ -1,0 +1,30 @@
+# ════════════════════════════════════════════════════════════════════
+# SnakeSEQ configuration file
+# Change values here — never edit the Snakefile for routine changes
+# ════════════════════════════════════════════════════════════════════
+
+# Sample sheet (sample name, SRA accession, condition)
+samples: config/samples.tsv
+
+# Path to HISAT2 genome index (prefix only, no extension)
+# Example: resources/hg38_index/genome -> matches genome.1.ht2, genome.2.ht2 ...
+genome_index: resources/hg38_index/genome
+
+# Gene annotation file (GTF format)
+gtf: resources/Homo_sapiens.GRCh38.111.gtf
+
+# Output directory root
+results_dir: results
+
+# Number of threads per rule (tune based on your CPU cores)
+threads: 4
+
+# Strandedness for featureCounts: 0 = unstranded, 1 = forward, 2 = reverse
+# GSE52778 (airway, Illumina TruSeq) is unstranded -> 0
+strandedness: 0
+
+# DESeq2 contrast: numerator vs denominator
+# log2FoldChange > 0 means UP in numerator relative to denominator
+contrast:
+  numerator: dexamethasone
+  denominator: untreated

@@ -1,0 +1,30 @@
+# ── Large data files — never commit to git ──
+results/fastq/
+results/sra/
+results/aligned/
+resources/hg38_index/
+resources/*.gtf
+*.bam
+*.bai
+*.fastq.gz
+*.sra
+
+# ── Snakemake internals ──
+.snakemake/
+logs/
+
+# ── Keep these results (small, used in README) ──
+!results/deseq2/
+!results/multiqc/
+!results/counts/count_matrix.csv
+
+# ── OS / editor junk ──
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/
+
+# ── Intermediate files ──
+results/qc/
+results/counts/*.txt*
+Miniforge3-MacOSX-arm64.sh
