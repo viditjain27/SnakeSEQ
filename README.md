@@ -4,7 +4,7 @@
 
 ### Automated RNA-seq Differential Expression Analysis Pipeline
 
-*From raw SRA reads to publication-ready results — in one command.*
+*From raw SRA reads to publication-ready results - in one command.*
 
 [![Snakemake](https://img.shields.io/badge/Snakemake-≥8.0-brightgreen?style=flat-square&logo=python)](https://snakemake.readthedocs.io)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)](https://www.python.org/)
@@ -15,7 +15,7 @@
 
 <br/>
 
-> Built and validated on **GSE52778** — Airway Smooth Muscle Cells (human, paired-end)  
+> Built and validated on **GSE52778** - Airway Smooth Muscle Cells (human, paired-end)  
 > Identifies 400+ differentially expressed genes between untreated and dexamethasone-treated cells.
 
 </div>
@@ -24,7 +24,7 @@
 
 ## 🔍 What This Pipeline Does
 
-Most RNA-seq analyses are run **manually** — command by command — making them error-prone, non-reproducible, and impossible to scale. This pipeline solves that by fully automating every step using **Snakemake**, from raw NCBI SRA downloads all the way to differential expression plots.
+Most RNA-seq analyses are run **manually** - command by command - making them error-prone, non-reproducible, and impossible to scale. This pipeline solves that by fully automating every step using **Snakemake**, from raw NCBI SRA downloads all the way to differential expression plots.
 
 **You give it:** a list of SRA accession IDs + a condition label  
 **It gives you:** QC reports, aligned BAMs, count matrix, DE gene table, and 3 publication-quality figures
